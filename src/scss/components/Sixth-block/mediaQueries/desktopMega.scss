@@ -1,0 +1,137 @@
+@import '../desktop';
+
+& {
+    .page-identifier {
+        top: 4vh;
+        left: 4vw;
+        width: 12vw;
+        height: 46px;
+
+        span {
+            font-size: 32px;
+        }
+    }
+
+    h4 {
+        margin: 12vh 4vw 0;
+        font-size: px(44);
+        line-height: px(60);
+    }
+
+    .info {
+        h5 {
+            margin: 4vh 4vw 0;
+            font-size: px(60);
+            line-height: px(80);
+        }
+
+        p {
+            margin: 2vh 4vw 4vh;
+            width: px(800);
+            font-size: px(32);
+            line-height: px(40);
+        }
+    }
+
+    .test-drive {
+        font-size: px(32);
+        margin-left: 4vw;
+    }
+
+    .test-drive-button,
+    .submit {
+        margin: 2vh 4vw 0;
+        padding: px(20) px(100);
+
+        span {
+            font-size: px(32);
+        }
+    }
+
+    .close-form {
+        width: px(100);
+        padding: px(20);
+        right: 4vw;
+        top: 4vh;
+    }
+
+    .test-drive-form {
+        &::after {
+            top: 12vh;
+            right: 6vw;
+            font-size: px(240);
+        }
+
+        h4 {
+            margin: 12vh 0 4vh 25vw;
+            padding-bottom: px(30);
+            font-size: px(60);
+            line-height: px(80);
+        }
+
+        form {
+            margin-left: 25vw;
+            width: 50vw;
+
+            .gender {
+                span {
+                    font-size: px(32);
+                    line-height: px(40);
+                }
+            }
+
+            .name,
+            .surname,
+            .tel,
+            .email {
+                margin: 2vh 0;
+                font-size: px(32);
+            }
+
+            [type='text'],
+            [type='tel'],
+            [type='email'] {
+                height: px(80);
+                padding-left: px(20);
+
+                &::placeholder {
+                    font-size: px(32);
+                }
+            }
+
+            .agreement {
+                margin-top: 4vh;
+
+                .checkbox-mask {
+                    width: px(40);
+                    height: px(40);
+                    font-size: px(32);
+                    border-radius: 25%;
+                }
+
+                [type='checkbox'] {
+                    &:checked {
+                        & ~ .checkbox-mask::before {
+                            font-size: px(44);
+                        }
+                    }
+                }
+
+                [for='agreement'] {
+                    padding-left: px(40);
+                    font-size: px(44);
+                }
+
+                p {
+                    padding-top: 2vh;
+                    font-size: px(32);
+                    line-height: px(40);
+                }
+            }
+
+            .submit {
+                margin: 4vh auto 0;
+            }
+        }
+    }
+}

@@ -1,0 +1,222 @@
+@import '../desktop';
+
+& {
+    .page-identifier {
+        top: 4vh;
+        left: 4vw;
+        width: 12vw;
+        height: 46px;
+
+        span {
+            font-size: 32px;
+        }
+    }
+
+    .video-container {
+        width: 70vw;
+        height: 60vh;
+        top: 10vh;
+        left: 15vw;
+        right: 15vw;
+    }
+
+    .right-arrow,
+    .left-arrow {
+        bottom: 21.8vh;
+        height: 2vh;
+    }
+
+    .right-arrow {
+        right: 5vw;
+    }
+
+    .left-arrow {
+        left: 5vw;
+    }
+
+    .video-slider {
+        bottom: 20vh;
+        width: 84vw;
+        left: 8vw;
+        padding-bottom: 3.5vh;
+        padding-top: 8.5vh;
+
+        &::before {
+            top: 7vh;
+            left: 0;
+            width: 2.8vw;
+            height: 3vh;
+        }
+
+        &::after {
+            top: 7vh;
+            right: 0;
+            width: 2.8vw;
+            height: 3vh;
+        }
+
+        .bottom-line__dash-line {
+            bottom: 2.7vh;
+            width: 78.6vw;
+            left: 2.5vw;
+        }
+
+        .bottom-line {
+            bottom: 1vh;
+            width: 127vw;
+            padding-bottom: 2.5vh;
+            padding-top: 8.5vh;
+            padding-left: 1vw;
+
+            img {
+                width: 5vw;
+                height: 3vw;
+            }
+
+            .video-slider__item {
+                left: .5vw;
+                bottom: 1vh;
+                padding: 10px;
+                padding-bottom: 1vh;
+
+                div {
+                    font-size: px(22);
+                }
+            }
+
+            .second-item {
+                left: 6.5vw;
+            }
+
+            .third-item {
+                left: 12.5vw;
+            }
+
+            .fourth-item {
+                left: 18.5vw;
+            }
+
+            .fifth-item {
+                left: 24.5vw;
+            }
+
+            .sixth-item {
+                left: 30.5vw;
+            }
+
+            .seventh-item {
+                left: 36.5vw;
+            }
+
+            .eight-item {
+                left: 42.5vw;
+            }
+
+            .ninth-item {
+                left: 48.5vw;
+            }
+
+            .tenth-item {
+                left: 54.5vw;
+            }
+
+            .eleventh-item {
+                left: 60.5vw;
+            }
+
+            .twelfth-item {
+                left: 66.5vw;
+            }
+
+            .thirteenth-item {
+                left: 72.5vw;
+            }
+
+            .fourteenth-item {
+                left: 78.5vw;
+            }
+
+            .fifteenth-item {
+                left: 84.5vw;
+            }
+
+            .sixteenth-item {
+                left: 90.5vw;
+            }
+
+            .seventeenth-item {
+                left: 96.5vw;
+            }
+
+            .eighteenth-item {
+                left: 102.5vw;
+            }
+
+            .nineteenth-item {
+                left: 108.5vw;
+            }
+
+            .twentieth-item {
+                left: 114.5vw;
+            }
+
+            .twenty-first-item {
+                left: 120.5vw;
+            }
+
+            .twenty-second-item {
+                left: 126.5vw;
+            }
+
+            .small-circle {
+                height: 10px;
+            }
+        }
+    }
+
+    //    Footer
+
+    .Footer {
+        width: 100vw;
+        padding: px(40) px(100) px(20);
+
+        ul {
+            width: px(2400);
+            padding-bottom: px(50);
+
+            li {
+                width: 16.6%;
+                padding-bottom: px(20);
+
+                img {
+                    margin: px(10) auto;
+                    height: px(60);
+                }
+
+                span {
+                    font-size: px(32);
+                }
+            }
+        }
+
+        & > div {
+            width: px(2400);
+
+            .social-networks {
+                width: px(300);
+                height: px(120);
+                padding-top: px(10);
+
+                svg {
+                    width: px(60);
+                }
+            }
+
+            .logo {
+                svg {
+                    width: px(220);
+                }
+            }
+        }
+    }
+}

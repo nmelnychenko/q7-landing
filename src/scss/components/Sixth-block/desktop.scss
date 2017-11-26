@@ -1,0 +1,408 @@
+& {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url('images/test-drive-bg.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    
+    .page-identifier {
+        position: absolute;
+        z-index: 1;
+        top: px(40);
+        left: 2vw;
+        width: 12vw;
+        height: px(50);
+        border-bottom: .5px solid $colorWhite;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 2;
+            bottom: -3px;
+            left: 57.1428%;
+            width: 14.2857%;
+            height: 3px;
+            background: $colorWhite;
+            transition: left .5s 1s ease;
+        }
+    }
+
+    &.current-page {
+        .page-identifier::before {
+            left: 71.4285%;
+        }
+
+        &.page {
+            h4 {
+                animation: textFadeIn .5s 1s ease both;
+
+                &::after {
+                    animation: underlineFromCenter 1s 1.5s ease both;
+                }
+            }
+
+            h5 {
+                animation: textFadeIn .5s 2.5s ease both;
+            }
+
+            p {
+                animation: textFadeIn .5s 2.8s ease both;
+            }
+
+            .test-drive {
+                animation: textFadeIn .5s 3.1s ease both;
+            }
+        }
+
+        &.form {
+            .test-drive-form {
+                transform: translateX(0);
+            }
+        }
+    }
+
+    &.sq7 {
+        h4 {
+            margin: 10vh px(120) 30vh;
+            font-weight: 800;
+            font-size: px(44);
+
+            &::after {
+                bottom: px(-20);
+            }
+        }
+
+        .test-drive {
+            color: $colorWhite;
+
+            span {
+                color: $colorPink;
+            }
+        }
+    }
+
+    &.etron {
+        h4 {
+            margin: 30vh px(120) 6vh;
+            font-weight: 800;
+            font-size: px(44);
+
+            &::after {
+                display: none;
+            }
+        }
+    }
+
+    h4 {
+        position: relative;
+        width: max-content;
+        margin: 10vh px(120) 0;
+        font-family: 'Audi', Arial, Helvetica, sans-serif;
+        font-size: px(30);
+        font-weight: 400;
+        line-height: px(80);
+        opacity: 0;
+        transform: translateY(10px);
+
+        &::after {
+            width: 0;
+            height: 2px;
+            position: absolute;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            content: "";
+            background-image: linear-gradient(to right, rgba(255,20,76, 0), rgba(255,20,76, 0.8) 40%, rgba(255,20,76, 1) 50%, rgba(255,20,76, 0.8) 60%, rgba(255,20,76,0));
+        }
+    }
+
+    .info {
+        h5 {
+            width: max-content;
+            margin: 2vh px(120) 0;
+            font-family: 'Audi', Arial, Helvetica, sans-serif;
+            font-size: px(44);
+            line-height: px(60);
+            opacity: 0;
+            transform: translateY(10px);
+        }
+
+        p {
+            margin: px(60) px(120) px(100);
+            width: px(560);
+            font-family: 'Audi', Arial, Helvetica, sans-serif;
+            font-size: px(22);
+            line-height: px(36);
+            opacity: 0;
+            transform: translateY(10px);
+        }
+    }
+
+    .test-drive {
+        color: $colorDarkPink;
+        margin-left: px(120);
+        font-weight: 800;
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    .test-drive-button,
+    .submit {
+        background: $colorDarkPink;
+        margin: px(80) px(160) 0;
+        padding: px(20) px(100);
+        transform: skewX(-45deg);
+        border-radius: 0;
+        cursor: pointer;
+        transition: background .5s ease;
+
+        span {
+            display: block;
+            color: $colorWhite;
+            font-size: px(28);
+            transform: skewX(45deg);
+            transition: color .5s ease;
+        }
+
+        &:hover {
+            background: $colorWhite;
+
+            span {
+                color: $colorDarkPink;
+            }
+        }
+    }
+
+    .close-form {
+        width: px(60);
+        padding: px(10);
+        position: absolute;
+        right: px(60);
+        top: px(60);
+        cursor: pointer;
+        transform: rotateZ(0);
+        transition: transform .5s ease;
+
+        .cls-1 {
+            fill: $colorWhite;
+            transition: fill .5s ease;
+        }
+
+        &:hover {
+            transform: rotateZ(180deg);
+
+            .cls-1 {
+                fill: $colorPink;
+            }
+        }
+    }
+    
+    .test-drive-form {
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        background: #000;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+        transform: translateX(100vw);
+        transition: transform 1s ease;
+
+        &::after {
+            content: 'Q7';
+            position: absolute;
+            top: px(220);
+            right: px(80);
+            color: $colorGrey;
+            font-size: px(160);
+            font-weight: 800;
+            opacity: .1;
+            transform: rotate(90deg);
+        }
+
+        h4 {
+            color: $colorPink;
+            margin: 10vh 0 px(60) 20vw;
+            padding-bottom: px(30);
+            font-size: px(32);
+            line-height: px(40);
+            font-weight: 800;
+            opacity: 1;
+            transform: translateY(0);
+
+            &::after {
+                width: 100%;
+                left: 0;
+                right: 0;
+            }
+
+            span {
+                color: $colorWhite;
+            }
+        }
+
+        form {
+            margin-left: 20vw;
+            width: 60vw;
+
+            .gender {
+                padding: px(20) 0;
+                position: relative;
+
+                span {
+                    font-size: px(20);
+                    line-height: px(28);
+                    margin-right: px(70);
+                    vertical-align: top;
+                }
+
+                input[type='radio'] {
+                    position: absolute;
+                    opacity: 0;
+                    width: px(30);
+                    height: px(30);
+                    z-index: 2;
+                    cursor: pointer;
+                }
+
+                [value='male'],
+                .male {
+                    left: px(240);
+                }
+
+                [value='female'],
+                .female {
+                    left: px(340);
+                }
+
+                [value='male']:checked ~ .male,
+                [value='female']:checked ~ .female {
+                    outline: 1px solid $colorPink;
+                }
+
+                .male,
+                .female {
+                    position: absolute;
+                    display: inline-block;
+                    width: px(30);
+                    height: px(30);
+                    padding: px(20);
+                }
+
+                .male {
+                    background: url('images/male-icon.png') center center no-repeat;
+                    background-size: 80% 80%;
+                }
+
+                .female {
+                    background: url('images/female-icon.png') center center no-repeat;
+                    background-size: auto 100%;
+                }
+            }
+
+            .name,
+            .surname,
+            .tel,
+            .email {
+                width: 100%;
+                margin: px(30) 0;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    bottom: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: $colorGrey;
+                }
+            }
+
+            [type='text'],
+            [type='tel'],
+            [type='email'] {
+                width: 100%;
+                height: px(50);
+                padding-left: px(20);
+                color: $colorWhite;
+                border: none;
+                background: transparent;
+                outline: none;
+
+                &::placeholder {
+                    color: $colorGrey;
+                    font-size: px(20);
+                    opacity: 1;
+                }
+            }
+
+            .agreement {
+                position: relative;
+                margin-top: px(60);
+                user-select: none;
+
+                .checkbox-mask {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 2px;
+                    background: none;
+                    z-index: 0;
+                    width: px(24);
+                    height: px(24);
+                    font-size: px(20);
+                    border: 1px solid $colorGrey;
+                    border-radius: 25%;
+                }
+
+                [type='checkbox'] {
+                    opacity: 0;
+                    position: relative;
+                    z-index: 2;
+                    cursor: pointer;
+
+                    &:checked {
+
+                        & ~ .checkbox-mask::before {
+                            content: '✓';
+                            color: $colorPink;
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                            top: -5px;
+                            width: 100%;
+                            height: 100%;
+                            padding-left: 1px;
+                            font-size: px(30);
+                            text-align: center;
+                        }
+                    }
+                }
+
+                [for='agreement'] {
+                    color: $colorGrey;
+                    padding-left: px(20);
+                    font-size: px(24);
+                }
+
+                p {
+                    color: $colorGrey;
+                    padding-top: px(20);
+                    font-size: px(20);
+                    line-height: px(24);
+                }
+            }
+
+            .submit {
+                margin: 4vh auto 0;
+            }
+        }
+    }
+}

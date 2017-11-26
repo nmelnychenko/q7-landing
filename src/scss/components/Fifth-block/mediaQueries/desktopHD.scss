@@ -1,0 +1,297 @@
+@import '../desktop';
+
+@keyframes carFadeInDiagonal4 {
+    0% {
+        top: 32vh;
+        left: 22vw;
+        transform: scale(.95);
+        opacity: 0;
+    }
+
+    100% {
+        top: 26vh;
+        left: 10vw;
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+& {
+    .page-identifier {
+        top: px(100);
+        left: 4vw;
+    }
+
+    &__counter,
+    &__divider {
+        font-size: px(100);
+    }
+
+    &__counter {
+        top: px(-108);
+        left: px(36);
+    }
+
+    &__slider {
+        .item {
+            h4 {
+                font-size: px(60);
+            }
+
+            p {
+                font-size: px(28);
+                line-height: px(36);
+            }
+        }
+
+        .first-slide {
+            h4 {
+                font-size: px(32);
+            }
+
+            &__left-item {
+                padding-left: 4vw;
+                padding-top: 12vh;
+                width: 28vw;
+
+                .info {
+                    h5 {
+                        font-size: px(48);
+                        line-height: px(80);
+                    }
+
+                    p {
+                        font-size: px(28);
+                        line-height: px(36);
+                        padding-bottom: 4vh;
+                    }
+                }
+            }
+
+            &__center-item {
+                width: 28vw;
+                padding-top: 4vh;
+
+                h5 {
+                    font-size: px(32);
+                }
+
+                p {
+                    font-size: px(28);
+                    line-height: px(36);
+                }
+            }
+
+            &__right-item {
+                width: 28vw;
+                padding: 4vh 4vw 0 0;
+
+                h5 {
+                    font-size: px(32);
+                }
+
+                p {
+                    font-size: px(28);
+                    line-height: px(36);
+                }
+
+                svg {
+                    margin-top: 2vh;
+                    margin-left: 0;
+                }
+            }
+        }
+
+        .second-slide {
+            h4 {
+                font-size: px(32);
+            }
+
+            &__left-item {
+                padding-left: 4vw;
+                padding-top: 12vh;
+
+                p {
+                    font-size: px(28);
+                    line-height: px(36);
+                    padding-bottom: 2vh;
+                }
+
+                svg {
+                    margin-top: 6vh;
+                }
+            }
+
+            &__right-item {
+                width: 30vw;
+                margin-top: 12vh;
+                margin-right: 4vw;
+
+                p {
+                    font-size: px(28);
+                    line-height: px(36);
+                    padding-bottom: 2vh;
+                }
+
+                svg {
+                    width: 30vw;
+                    margin-top: 20vh;
+                    margin-left: 4vw;
+                }
+            }
+        }
+
+        .third-slide {
+            .car-photo {
+                .info-block {
+                    width: px(820);
+                    top: 34vh;
+                    left: -22vh;
+
+                    h5 {
+                        font-size: px(32);
+                        line-height: px(40);
+                    }
+
+                    p {
+                        font-size: px(28);
+                        line-height: px(36);
+                    }
+                }
+            }
+
+            h4 {
+                font-size: px(60);
+                margin: 12vh 4vw px(80);
+            }
+
+            p {
+                width: px(1200);
+                font-size: px(28);
+                line-height: px(36);
+                padding-left: 4vw;
+            }
+        }
+
+        .fourth-slide {
+            h4 {
+                margin: 6vh 0 px(100) 60vw;
+                padding: 0;
+                font-size: px(60);
+            }
+
+            .car-photo {
+                top: 32vh;
+                left: 18vw;
+                width: 50vw;
+
+                svg {
+                    width: 30vw;
+                    left: 28vw;
+                }
+
+                .info-block {
+                    left: 50vw;
+                    top: -14vh;
+                    width: 36vw;
+
+                    p {
+                        font-size: px(28);
+                        line-height: px(36);
+                    }
+                }
+            }
+        }
+
+        .fifth-slide {
+            img {
+                object-position: 100% 50%;
+            }
+
+            .left-side {
+                padding: 10vh 4vw 0;
+
+                h5 {
+                    font-size: px(32);
+                    line-height: px(40);
+                }
+
+                h4 {
+                    font-size: px(60);
+                }
+
+                p {
+                    width: px(940);
+                    font-size: px(28);
+                    line-height: px(36);
+                }
+            }
+
+            .right-side {
+                padding-top: 8vh;
+                width: px(1400);
+
+                div {
+                    padding-right: px(60);
+
+                    h5 {
+                        font-size: px(32);
+                        padding-bottom: 2vh;
+                    }
+
+                    p {
+                        font-size: px(28);
+                        line-height: px(36);
+                        padding-bottom: 6vh;
+                    }
+                }
+            }
+        }
+
+        .sixth-slide {
+            .main-content {
+                width: 50vw;
+                padding-top: 6vh;
+                padding-right: 4vw;
+
+                h4 {
+                    margin-bottom: 4vh;
+                    line-height: px(80);
+                }
+
+                .list-heading {
+                    font-size: px(44);
+                    padding-bottom: 2vh;
+                }
+
+                li {
+                    font-size: px(28);
+                    line-height: px(36);
+
+                    &:after {
+                        font-size: px(28);
+                    }
+                }
+            }
+        }
+
+        .ninth-slide {
+            .main-content {
+                width: 40vw;
+                padding-top: 6vh;
+                padding-right: 4vw;
+
+                h4 {
+                    margin-bottom: 4vh;
+                    line-height: px(80);
+                }
+
+                p {
+                    font-size: px(28);
+                    line-height: px(36);
+                    padding-bottom: 2vh;
+                }
+            }
+        }
+    }
+}

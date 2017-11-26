@@ -1,0 +1,46 @@
+@import '../desktop';
+
+& {
+    .top-panel {
+        padding: 0 3vw;
+        height: 12vh;
+
+        & > span {
+            font-size: 60px;
+        }
+
+        .logo {
+            height: 60px;
+            width: 500px;
+            cursor: pointer;
+
+            svg {
+                width: auto;
+                height: 100%;
+            }
+
+            p {
+                font-size: 28px;
+            }
+        }
+    }
+
+    .item {
+        .quattro {
+            background: url('images/quattro.png') center 140% no-repeat;
+            background-size: 50vw 50vw;
+        }
+
+        .car-model {
+            bottom: 4vh;
+            left: 4vw;
+            font-size: px(32);
+            line-height: px(40);
+
+            h3 {
+                margin-bottom: px(40);
+                font-size: px(48);
+            }
+        }
+    }
+}

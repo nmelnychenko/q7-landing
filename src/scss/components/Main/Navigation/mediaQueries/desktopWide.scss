@@ -1,0 +1,23 @@
+@import '../desktop';
+
+& {
+    .item {
+        .hovered {
+            p {
+                margin-top: 14%;
+                font-size: px(22);
+                line-height: px(28);
+            }
+
+            .price {
+                span {
+                    font-size: px(20);
+                }
+            }
+
+            img {
+                top: 30%;
+            }
+        }
+    }
+}

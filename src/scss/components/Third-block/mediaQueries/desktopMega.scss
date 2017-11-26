@@ -1,0 +1,199 @@
+@import '../desktop';
+
+@keyframes moveFromLeft {
+    to {
+        transform: translateX(-5vw);
+    }
+}
+
+& {
+    .page-identifier {
+        top: 4vh;
+        left: 4vw;
+        width: 12vw;
+        height: 46px;
+
+        span {
+            font-size: 32px;
+        }
+    }
+
+    &__controls {
+        bottom: 4vh;
+        left: 4vw;
+    }
+
+    &__slider {
+        .items {
+            .new {
+                .left__heading,
+                .right__heading {
+                    font-size: 18px;
+                }
+
+                .left__paragraph,
+                .right__paragraph {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .first-slide {
+            &__main-text {
+                height: 1vh;
+                width: 50vw;
+                transform: translateX(50vw);
+
+                .about-transmition {
+                    width: 100%;
+                    margin: 0;
+
+                    h4 {
+                        margin: 4vh;
+                        font-size: px(60);
+                    }
+
+                    p {
+                        font-size: px(32);
+                        line-height: px(40);
+                        margin: px(40) px(80) 0 10vh;
+                    }
+                }
+
+                .about-control {
+                    width: 100%;
+                    padding-left: px(600);
+                    padding-top: 6vh;
+
+                    h4 {
+                        font-size: px(60);
+                        padding-right: px(20);
+                        margin: px(20) 0;
+                    }
+
+                    p {
+                        padding-right: 4vw;
+                        font-size: px(32);
+                        line-height: px(40);
+                    }
+                }
+            }
+        }
+
+        .second-slide {
+            h4 {
+                font-size: px(60);
+                line-height: px(80);
+            }
+
+            .number {
+                font-size: px(60);
+                padding-bottom: px(40);
+            }
+
+            .info {
+                font-size: px(32);
+                line-height: px(40);
+            }
+
+            .safety {
+                margin: 14vh 4vw px(40);
+
+                .statistic {
+                    &.first-block {
+                        padding: px(140) px(20) px(120);
+                    }
+
+                    &.second-block {
+                        padding: 0 px(80) px(120);
+                    }
+
+                    &.third-block {
+                        padding: 0 px(140) px(120);
+                    }
+
+                    &.forth-block {
+                        padding-left: px(200);
+                    }
+                }
+            }
+
+            .weight {
+                width: 50vw;
+                margin: px(100) px(200) 0 px(100);
+
+                h4 {
+                    font-size: px(60);
+                    line-height: px(80);
+                }
+
+                h4 {
+                    margin-left: px(200);
+                    margin-bottom: px(80);
+                }
+
+                & > .info {
+                    padding-left: px(420);
+                }
+
+                .statistic {
+                    &.first-block {
+                        padding: px(80) 0 px(60) px(840);
+                    }
+
+                    &.second-block {
+                        padding: px(60) px(80) 0 px(780);
+                    }
+
+                    &.third-block {
+                        padding: px(100) px(220) 0 px(720);
+                    }
+                }
+            }
+        }
+
+        .third-slide {
+            &__main-text {
+                margin-left: 4vw;
+                max-width: 40vw;
+
+                h4 {
+                    margin: px(220) 0 px(60);
+                    font-size: px(60);
+                }
+
+                p {
+                    margin: px(40) 0;
+                    font-size: px(32);
+                    line-height: px(40);
+                }
+
+                .text-wrapper {
+                    article {
+                        &::before,
+                        &::after {
+                            display: none;
+                        }
+
+                        .text-container {
+                            padding-top: 0;
+                            height: auto;
+                        }
+                    }
+                }
+            }
+
+            .spotlight-photos {
+                width: 42vw;
+
+                .item {
+                    svg {
+                        width: px(840);
+                        bottom: 5vw;
+                        left: -9vw;
+                    }
+                }
+            }
+        }
+    }
+}

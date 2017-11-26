@@ -1,0 +1,31 @@
+@import '../desktop';
+
+& {
+
+    .item {
+
+        .car-model {
+            width: px(1000);
+            font-size: px(32);
+
+            h3 {
+                font-size: px(60);
+            }
+        }
+
+        .quattro {
+            background: url('images/car-q7.png') center 120% no-repeat;
+            background-size: 46vw 38vw;
+        }
+
+        .e-tron {
+            background: url('images/car-q7-e-tron.png') center 100% no-repeat;
+            background-size: 46vw 38vw;
+        }
+
+        .sq7-tdi {
+            background: url('images/car-sq7.png')  center 100% no-repeat;
+            background-size: 46vw 38vw;
+        }
+    }
+}

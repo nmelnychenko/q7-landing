@@ -1,0 +1,125 @@
+@import '../desktop';
+
+& {
+    .page-identifier {
+        top: px(100);
+        left: 4vw;
+    }
+
+    &__counter,
+    &__divider {
+        font-size: px(100);
+    }
+
+    &__counter {
+        top: px(-108);
+        left: px(36);
+    }
+
+    &__slider {
+        .first-slide {
+            .show-preview {
+                width: 16vw;
+
+                span {
+                    font-size: px(32);
+                }
+            }
+        }
+
+        .second-slide {
+            .infoblock {
+                width: px(840);
+
+                h5 {
+                    font-size: px(32);
+                    line-height: px(40);
+                    padding-bottom: px(20);
+                }
+
+                p {
+                    font-size: px(28);
+                    line-height: px(36);
+                }
+            }
+
+            .info {
+                width: px(1400);
+                top: px(60);
+                right: px(100);
+
+                h4 {
+                    font-size: px(60);
+                }
+
+                p {
+                    font-size: px(28);
+                    line-height: px(40);
+                }
+            }
+        }
+
+        .fourth-slide {
+            padding: 14vh px(200);
+
+            .timber {
+                width: px(1000);
+            }
+
+            .info {
+                width: px(1400);
+
+                h4 {
+                    font-size: px(60);
+                    margin-bottom: px(80);
+                }
+
+                .first-paragraph,
+                .second-paragraph {
+                    h5 {
+                        font-size: px(44);
+                        margin-bottom: px(30);
+                    }
+
+                    p {
+                        font-size: px(28);
+                        line-height: px(40);
+                        padding-bottom: px(100);
+                    }
+                }
+            }
+        }
+
+        .fifth-slide {
+            .left-side {
+                .info {
+                    padding: 14vh px(100) 0 4vw;
+
+                    h4 {
+                        font-size: px(60);
+                    }
+
+                    p {
+                        font-size: px(28);
+                        line-height: px(40);
+                    }
+                }
+            }
+        }
+
+        .sixth-slide {
+            .info {
+                width: px(2000);
+
+                h4 {
+                    font-size: px(60);
+                }
+
+                p {
+                    font-size: px(28);
+                    line-height: px(40);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,155 @@
+@import '../desktop';
+
+& {
+
+    .page-identifier {
+        top: px(100);
+    }
+
+    .page-identifier-bg {
+        top: px(80);
+    }
+
+    .info {
+        p {
+            margin: px(60) px(120) px(100);
+            width: px(560);
+            font-size: px(26);
+            line-height: px(36);
+        }
+    }
+
+    .test-drive {
+        margin-left: px(120);
+    }
+
+    .test-drive-button,
+    .submit {
+        margin: px(80) px(160) 0;
+        padding: px(20) px(100);
+
+        span {
+            font-size: px(28);
+        }
+    }
+
+    .close-form {
+        width: px(60);
+        padding: px(10);
+        right: px(60);
+        top: px(60);
+    }
+
+    .test-drive-form {
+        &::after {
+            top: px(220);
+            right: px(80);
+            font-size: px(160);
+        }
+
+        h4 {
+            color: $colorPink;
+            margin: 4vh 0 2vh 20vw;
+            padding-bottom: px(30);
+            font-size: px(38);
+            line-height: px(52);
+            font-weight: 800;
+        }
+
+        form {
+            margin-left: 20vw;
+            width: 60vw;
+
+            .gender {
+                padding: px(20) 0;
+
+                span {
+                    font-size: px(24);
+                    line-height: px(30);
+                    margin-right: px(70);
+                }
+
+                input[type='radio'] {
+                    width: px(30);
+                    height: px(30);
+                }
+
+                [value='male'],
+                .male {
+                    left: px(240);
+                }
+
+                [value='female'],
+                .female {
+                    left: px(340);
+                }
+
+                .male,
+                .female {
+                    width: px(30);
+                    height: px(30);
+                    padding: px(20);
+                }
+            }
+
+            .name,
+            .surname,
+            .tel,
+            .email {
+                margin: px(40) 0;
+
+                &::after {
+                    bottom: 0;
+                    width: 100%;
+                    height: 1px;
+                }
+            }
+
+            [type='text'],
+            [type='tel'],
+            [type='email'] {
+                height: px(60);
+                padding-left: px(20);
+
+                &::placeholder {
+                    font-size: px(24);
+                    opacity: 1;
+                }
+            }
+
+            .agreement {
+                margin-top: px(100);
+
+                .checkbox-mask {
+                    width: px(24);
+                    height: px(24);
+                    font-size: px(20);
+                    border-radius: 25%;
+                }
+
+                [type='checkbox'] {
+                    &:checked {
+                        & ~ .checkbox-mask::before {
+                            font-size: px(30);
+                        }
+                    }
+                }
+
+                [for='agreement'] {
+                    padding-left: px(20);
+                    font-size: px(32);
+                }
+
+                p {
+                    padding-top: px(40);
+                    font-size: px(24);
+                    line-height: px(32);
+                }
+            }
+
+            .submit {
+                margin: px(80) auto 0;
+            }
+        }
+    }
+}

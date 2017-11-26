@@ -1,0 +1,21 @@
+{
+  "name": "gontarenko",
+  "description": "components",
+  "version": "1.0.0",
+  "license": "ISC",
+  "authors": [
+    "Igor Gontarenko <igor.gontarenko@gmail.com> (http://gontarenko.pp.ua)"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "overrides": {},
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "wow": "wowjs#^1.1.2",
+    "animate.css": "^3.5.2",
+    "threesixty-slider": "^2.0.5"
+  }
+}

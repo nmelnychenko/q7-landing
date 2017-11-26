@@ -1,0 +1,140 @@
+@import '../desktop';
+
+& {
+    .page-identifier {
+        top: px(50);
+        height: px(40);
+    }
+
+    h4 {
+        margin: px(140) px(60) 0;
+        font-size: px(24);
+        line-height: px(60);
+    }
+
+    .info {
+        margin-bottom: 20vh;
+
+        h5 {
+            margin: px(40) px(60) 0;
+            font-size: px(32);
+            line-height: px(40);
+        }
+
+        p {
+            margin: px(40) px(60) px(60);
+            width: px(560);
+            font-size: px(18);
+            line-height: px(22);
+        }
+    }
+
+    .test-drive-form {
+        h4 {
+            margin: px(100) 0 px(40) px(400);
+            padding-bottom: px(30);
+            font-size: px(32);
+            line-height: px(40);
+        }
+
+        form {
+            margin-left: px(400);
+            width: px(800);
+
+            .gender {
+                padding: 0;
+
+                span {
+                    font-size: px(18);
+                    line-height: px(22);
+                    margin-right: px(60);
+                }
+
+                input[type='radio'] {
+                    width: px(30);
+                    height: px(30);
+                }
+
+                [value='male'],
+                .male {
+                    left: px(220);
+                }
+
+                [value='female'],
+                .female {
+                    left: px(320);
+                }
+
+                .male,
+                .female {
+                    width: px(30);
+                    height: px(30);
+                    padding: 0;
+                }
+            }
+
+            .name,
+            .surname,
+            .tel,
+            .email {
+                margin: px(20) 0;
+            }
+
+            [type='text'],
+            [type='tel'],
+            [type='email'] {
+                height: px(30);
+                padding-left: px(16);
+
+                &::placeholder {
+                    font-size: px(18);
+                }
+            }
+
+            .agreement {
+                margin-top: px(40);
+
+                .checkbox-mask {
+                    width: px(20);
+                    height: px(20);
+                    font-size: px(18);
+                }
+
+                [type='checkbox'] {
+
+                    &:checked {
+
+                        & ~ .checkbox-mask::before {
+                            content: '✓';
+                            color: $colorPink;
+                            display: block;
+                            position: absolute;
+                            left: 0;
+                            top: -5px;
+                            width: 100%;
+                            height: 100%;
+                            padding-left: 1px;
+                            font-size: px(24);
+                            text-align: center;
+                        }
+                    }
+                }
+
+                [for='agreement'] {
+                    padding-left: px(16);
+                    font-size: px(22);
+                }
+
+                p {
+                    padding-top: px(20);
+                    font-size: px(18);
+                    line-height: px(22);
+                }
+            }
+
+            .submit {
+                margin: px(40) auto 0;
+            }
+        }
+    }
+}

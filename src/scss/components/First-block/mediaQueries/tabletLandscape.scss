@@ -1,0 +1,80 @@
+@import '../desktop';
+
+& {
+    .page-identifier {
+        top: px(50);
+        height: px(40);
+    }
+
+    .main-text {
+        padding-top: px(100);
+        height: auto;
+
+        h4 {
+            font-size: px(28);
+            line-height: px(60);
+        }
+
+        p {
+            margin: px(20) 0 px(60);
+            font-size: px(18);
+            line-height: px(22);
+        }
+    }
+
+    .car-container {
+        width: 100vw;
+        top: 46vh;
+        left: 0;
+
+        &::before {
+            top: -4vh;
+            left: 8.90552vw;
+            width: 68%;
+            height: 56%;
+        }
+
+        span {
+            top: px(60);
+            right: px(520);
+            font-size: px(70);
+        }
+
+        &::after {
+            width: 90%;
+            top: 20vh;
+            left: px(100);
+        }
+    }
+
+    .left-arrow {
+        top: 20vh;
+        left: px(400);
+    }
+
+    .right-arrow {
+        top: 20vh;
+        left: px(1100);
+    }
+
+    .hand {
+        top: 40vh;
+        left: px(860);
+
+        .previous-frame,
+        .next-frame {
+            top: px(-10);
+        }
+    }
+
+    .play,
+    .stop {
+        top: px(460);
+        right: px(100);
+    }
+
+    .threesixty {
+        position: absolute;
+        top: 50vh;
+    }
+}

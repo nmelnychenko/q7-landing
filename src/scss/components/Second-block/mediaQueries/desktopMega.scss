@@ -1,0 +1,14 @@
+@import '../desktop';
+
+& {
+    .page-identifier {
+        top: 4vh;
+        left: 4vw;
+        width: 12vw;
+        height: 46px;
+
+        span {
+            font-size: 32px;
+        }
+    }
+}

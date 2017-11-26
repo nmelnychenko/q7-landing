@@ -1,0 +1,224 @@
+@import '../desktop';
+
+& {
+    .page-identifier {
+        top: px(50);
+        height: px(40);
+    }
+
+    .right-arrow,
+    .left-arrow {
+        bottom: 31.8vh;
+        height: 2vh;
+        opacity: 0;
+    }
+
+    .right-arrow {
+        right: 5vw;
+    }
+
+    .left-arrow {
+        left: 5vw;
+    }
+
+    .video-container {
+        height: 50vh;
+    }
+
+    .video-slider {
+        bottom: 30vh;
+        width: 84vw;
+        left: 8vw;
+        padding-bottom: 3.5vh;
+        padding-top: 8.5vh;
+
+        &::before {
+            top: 6.3vh;
+            left: -.5vw;
+            width: 2.5vw;
+            height: px(40);
+        }
+
+        &::after {
+            top: 6.2vh;
+            right: 0;
+            width: 2.6vw;
+            height: px(40);
+        }
+
+        .bottom-line__dash-line {
+            bottom: 2.7vh;
+            width: 77.6vw;
+            left: 2.5vw;
+        }
+
+        .bottom-line {
+            bottom: 1vh;
+            width: 127vw;
+            left: 0;
+            padding-bottom: 2.5vh;
+            padding-top: 8.5vh;
+            padding-left: 1vw;
+            transform: translateX(0);
+
+            &.right {
+                transform: translateX(-48vw);
+            }
+
+            &.left {
+                transform: translateX(0);
+            }
+
+            img {
+                width: 5vw;
+                height: 3vw;
+                transform: translateY(-1.5vw);
+            }
+
+            .video-slider__item {
+                left: .5vw;
+                bottom: 1vh;
+                padding: 10px;
+                padding-bottom: 1vh;
+                transform: translateX(-11px) translateY(7px);
+
+                div {
+                    font-size: px(11.6);
+                }
+            }
+
+            .second-item {
+                left: 7.5vw;
+            }
+
+            .third-item {
+                left: 14.5vw;
+            }
+
+            .fourth-item {
+                left: 21.5vw;
+            }
+
+            .fifth-item {
+                left: 28.5vw;
+            }
+
+            .sixth-item {
+                left: 35.5vw;
+            }
+
+            .seventh-item {
+                left: 42.5vw;
+            }
+
+            .eight-item {
+                left: 49.5vw;
+            }
+
+            .ninth-item {
+                left: 56.5vw;
+            }
+
+            .tenth-item {
+                left: 63.5vw;
+            }
+
+            .eleventh-item {
+                left: 70.5vw;
+            }
+
+            .twelfth-item {
+                left: 77.5vw;
+            }
+
+            .thirteenth-item {
+                left: 84.5vw;
+            }
+
+            .fourteenth-item {
+                left: 91.5vw;
+            }
+
+            .fifteenth-item {
+                left: 98.5vw;
+            }
+
+            .sixteenth-item {
+                left: 105.5vw;
+            }
+
+            .seventeenth-item {
+                left: 112.5vw;
+            }
+
+            .eighteenth-item {
+                left: 119.5vw;
+            }
+
+            .nineteenth-item {
+                left: 126.5vw;
+            }
+
+            .twentieth-item {
+                left: 133.5vw;
+            }
+
+            .twenty-first-item {
+                left: 140.5vw;
+            }
+
+            .twenty-second-item {
+                left: 147.5vw;
+            }
+
+            .small-circle {
+                height: 10px;
+            }
+        }
+    }
+
+    .Footer {
+        width: 100vw;
+        padding: px(20) 5vw px(20);
+
+        ul {
+            width: 90vw;
+            padding-bottom: px(30);
+
+            li {
+                width: 16.6%;
+                padding-bottom: px(20);
+
+                img {
+                    margin: px(10) auto;
+                    height: px(50);
+                }
+
+                span {
+                    font-size: px(18);
+                }
+            }
+        }
+
+        & > div {
+            width: 80vw;
+
+            .social-networks {
+                width: px(140);
+                height: px(40);
+                padding-top: px(6);
+
+                svg {
+                    width: px(28);
+                }
+            }
+
+            .logo {
+
+                svg {
+                    width: px(80);
+                }
+            }
+        }
+    }
+}

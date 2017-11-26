@@ -1,0 +1,34 @@
+{
+  "name": "q7",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {},
+  "author": "stadniuk yevhen",
+  "license": "ISC",
+  "description": "q7",
+  "dependencies": {
+    "bower": "^1.8.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel-compile": "0.0.3",
+    "gulp-cache": "^0.4.6",
+    "gulp-clean-css": "^3.3.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-es6-module-transpiler": "^0.2.2",
+    "gulp-file-include": "^1.2.0",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-include": "^2.3.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-server-livereload": "^1.9.2",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^3.0.0"
+  }
+}

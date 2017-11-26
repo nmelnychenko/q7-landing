@@ -1,0 +1,202 @@
+@import '../desktop';
+
+& {
+    .page-identifier {
+        top: 4vh;
+        left: 4vw;
+        width: 12vw;
+        height: 46px;
+
+        span {
+            font-size: 32px;
+        }
+    }
+
+    &__controls {
+        bottom: 4vh;
+        left: 4vw;
+    }
+
+    &__slider {
+        .info {
+            h4 {
+                font-size: px(44);
+            }
+
+            p {
+                font-size: px(26);
+                line-height: px(36);
+                padding-top: px(60);
+            }
+        }
+
+        .first-slide {
+            .show-preview {
+                left: 44vw;
+                width: 14vw;
+
+                span {
+                    font-size: px(30);
+                }
+            }
+        }
+
+        .second-slide {
+            .infoblock {
+                width: px(840);
+
+                h5 {
+                    font-size: px(32);
+                    line-height: px(40);
+                    padding-bottom: px(20);
+                }
+
+                p {
+                    font-size: px(28);
+                    line-height: px(36);
+                }
+
+                &.rudder {
+                    bottom: 60vh;
+                    left: 10vh;
+                }
+
+                &.virtual-cockpit {
+                    bottom: 46vh;
+                    left: 67vh;
+                }
+
+                &.voice-control {
+                    bottom: 28vh;
+                    left: 88.5vh;
+                }
+
+                &.mmi {
+                    bottom: 10vh;
+                    left: 96vh;
+                }
+            }
+
+            .new {
+                width: px(540);
+
+                &.rudder {
+                    bottom: 48vh;
+                    left: 14vh;
+                }
+
+                &.virtual-cockpit {
+                    bottom: 51vh;
+                    left: 48vh;
+                }
+
+                &.voice-control {
+                    bottom: 34vh;
+                    left: 72vh;
+                }
+
+                &.mmi {
+                    bottom: 12.8vh;
+                    left: 72.4vh;
+                }
+            }
+
+            .interior {
+                height: 100vh;
+            }
+
+            .info {
+                width: px(1600);
+                top: 4vh;
+                right: 4vw;
+
+                h4 {
+                    font-size: px(60);
+                }
+
+                p {
+                    font-size: px(32);
+                    line-height: px(40);
+                }
+            }
+        }
+
+        .fourth-slide {
+            padding: 14vh 4vw;
+
+            .timber {
+                width: px(1000);
+            }
+
+            .info {
+                width: px(1800);
+
+                h4 {
+                    font-size: px(60);
+                    margin-bottom: px(80);
+                }
+
+                .first-paragraph,
+                .second-paragraph {
+                    h5 {
+                        font-size: px(44);
+                        margin-bottom: 2vh;
+                    }
+
+                    p {
+                        font-size: px(32);
+                        line-height: px(40);
+                        padding-bottom: 6vh;
+                    }
+                }
+            }
+        }
+
+        .fifth-slide {
+            .left-side {
+                width: 45vw;
+
+                .info {
+                    padding: 12vh 4vw 0;
+
+                    h4 {
+                        font-size: px(60);
+                        line-height: px(80);
+                    }
+
+                    p {
+                        font-size: px(32);
+                        line-height: px(40);
+                    }
+                }
+            }
+        }
+
+        .sixth-slide {
+            .info {
+                width: px(2000);
+                margin: 4vh auto;
+
+                h4 {
+                    font-size: px(60);
+                }
+
+                p {
+                    font-size: px(32);
+                    line-height: px(40);
+                }
+            }
+
+            .sprite {
+                margin: px(100) auto 0;
+                padding-left: px(100);
+                width: px(2400);
+                height: px(800);
+
+                &-item {
+                    width: px(400);
+                }
+            }
+        }
+    }
+}

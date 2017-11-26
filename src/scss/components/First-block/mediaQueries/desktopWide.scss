@@ -1,0 +1,32 @@
+@import '../desktop';
+
+& {
+    .page-identifier {
+        top: px(100);
+    }
+
+    .main-text {
+        padding-top: px(120);
+
+        h4 {
+            font-size: px(44);
+        }
+
+        p {
+            font-size: px(26);
+            line-height: px(36);
+        }
+    }
+
+    .left-arrow {
+        left: 22vw;
+    }
+
+    .right-arrow {
+        left: 64vw;
+    }
+
+    .hand {
+        left: 49.5vw;
+    }
+}

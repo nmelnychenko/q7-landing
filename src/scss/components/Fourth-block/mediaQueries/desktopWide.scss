@@ -1,0 +1,290 @@
+@import '../desktop';
+
+& {
+    .page-identifier {
+        top: px(100);
+    }
+
+    &__controls {
+        bottom: px(60);
+        left: px(80);
+        z-index: 99;
+
+        .numeration {
+            top: px(-30);
+            padding-left: px(40);
+            font-size: px(32);
+        }
+    }
+
+    &__counter,
+    &__divider {
+        font-size: px(80);
+    }
+
+    &__counter {
+        top: px(-80);
+        left: px(46);
+    }
+
+    &__divider {
+        top: px(-40);
+        left: px(54);
+    }
+
+    &__left-arrow {
+        margin-right: 4rem;
+    }
+
+    &__vertical-controls {
+        width: 30vw;
+        height: px(100);
+        left: 35vw;
+
+        .item {
+            width: 10px;
+            height: px(50);
+
+            &::after {
+                left: 4px;
+                width: 2px;
+                height: 100%;
+            }
+
+            span {
+                top: px(-50);
+                width: px(500);
+                left: px(-240);
+                font-size: px(20);
+            }
+
+            &:hover {
+                height: px(100);
+            }
+        }
+    }
+
+    &__slider {
+        .info {
+            h4 {
+                font-size: px(44);
+            }
+
+            p {
+                font-size: px(26);
+                line-height: px(36);
+                padding-top: px(60);
+            }
+        }
+
+        .first-slide {
+            .close-preview {
+                top: px(60);
+                right: px(60);
+                width: 10vw;
+                height: px(100);
+
+                .cross {
+                    &::before {
+                        left: 49%;
+                        top: 25%;
+                        width: 2%;
+                        height: 50%;
+                    }
+
+                    &::after {
+                        left: 49%;
+                        top: 25%;
+                        width: 2%;
+                        height: 50%;
+                    }
+                }
+            }
+
+            .show-preview {
+                left: 42vw;
+                top: 20vh;
+                width: 18vw;
+                height: px(100);
+
+                span {
+                    height: px(100);
+                    line-height: px(100);
+                }
+            }
+        }
+
+        .second-slide {
+            .infoblock {
+                width: px(640);
+
+                h5 {
+                    font-size: px(28);
+                    line-height: px(32);
+                    padding-bottom: px(20);
+                }
+
+                p {
+                    font-size: px(22);
+                    line-height: px(34);
+                }
+
+                &.rudder {
+                    bottom: 65vh;
+                    left: 8vh;
+                }
+
+                &.virtual-cockpit {
+                    bottom: 43vh;
+                    left: 73vh;
+                }
+
+                &.voice-control {
+                    bottom: 27vh;
+                    left: 92vh;
+                }
+
+                &.mmi {
+                    bottom: 10vh;
+                    left: 102vh;
+                }
+            }
+
+            .new {
+                width: px(540);
+
+                &.rudder {
+                    bottom: 50vh;
+                    left: 10vh;
+                }
+
+                &.virtual-cockpit {
+                    bottom: 51vh;
+                    left: 48vh;
+                }
+
+                &.voice-control {
+                    bottom: 34vh;
+                    left: 72vh;
+                }
+
+                &.mmi {
+                    bottom: 12.8vh;
+                    left: 72.4vh;
+                }
+            }
+
+            .interior {
+                height: 100vh;
+            }
+
+            .info {
+                width: px(1200);
+                top: px(60);
+                right: px(100);
+
+                h4 {
+                    font-size: px(44);
+                }
+
+                p {
+                    font-size: px(26);
+                    line-height: px(36);
+                }
+            }
+        }
+
+        .third-slide {
+            .third-slide__image {
+                width: 50vw;
+                height: 50vh;
+            }
+        }
+
+        .fourth-slide {
+            padding: 14vh px(200);
+
+            .timber {
+                width: px(1000);
+            }
+
+            .info {
+                width: px(1000);
+
+                h4 {
+                    font-size: px(44);
+                    margin-bottom: px(80);
+                }
+
+                .first-paragraph,
+                .second-paragraph {
+                    h5 {
+                        font-size: px(36);
+                        margin-bottom: px(30);
+                    }
+
+                    p {
+                        font-size: px(26);
+                        line-height: px(36);
+                        padding-bottom: px(100);
+                    }
+                }
+            }
+        }
+
+        .fifth-slide {
+            .left-side {
+                width: 45vw;
+
+                .info {
+                    padding: px(250) px(100) 0 px(150);
+
+                    h4 {
+                        font-size: px(44);
+                    }
+
+                    p {
+                        font-size: px(26);
+                        line-height: px(36);
+                    }
+                }
+            }
+
+            .right-side {
+                width: 55vw;
+
+                img {
+                    height: 75vh;
+                }
+            }
+        }
+
+        .sixth-slide {
+            .info {
+                width: px(1600);
+                padding-left: px(100);
+                margin: px(100) auto;
+
+                h4 {
+                    font-size: px(44);
+                }
+
+                p {
+                    font-size: px(26);
+                    line-height: px(36);
+                }
+            }
+
+            .sprite {
+                margin: px(100) auto 0;
+                padding-left: px(100);
+                width: px(1800);
+                height: px(600);
+
+                &-item {
+                    width: px(300);
+                }
+            }
+        }
+    }
+}

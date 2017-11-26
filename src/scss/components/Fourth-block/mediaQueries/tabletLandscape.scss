@@ -1,0 +1,231 @@
+@import '../desktop';
+
+& {
+    .page-identifier {
+        top: px(50);
+        height: px(40);
+    }
+
+    &__controls {
+        bottom: px(20);
+        left: px(60);
+
+        .numeration {
+            top: 0;
+        }
+    }
+
+    &__counter {
+        font-size: px(60);
+        top: px(-40);
+        left: px(30);
+    }
+
+    &__divider {
+        transform: scale(.7);
+        top: px(-30);
+        left: px(40);
+    }
+
+    &__left-arrow {
+        margin-right: 3rem;
+    }
+
+    &__vertical-controls {
+        height: 6vh;
+
+        .item {
+            height: 3vh;
+
+            span {
+                top: px(-30);
+                font-size: px(16);
+            }
+
+            &:hover {
+                height: 6vh;
+            }
+        }
+    }
+
+    &__slider {
+        .info {
+            h4 {
+                font-size: px(32);
+            }
+
+            p {
+                font-size: px(18);
+                line-height: px(22);
+                padding-top: px(40);
+            }
+        }
+
+        .first-slide {
+            .show-preview {
+                width: 25vw;
+            }
+        }
+
+        .second-slide {
+            .info {
+                h4 {
+                    font-size: px(28);
+                }
+
+                p {
+                    font-size: px(16);
+                    line-height: px(20);
+                    padding-top: px(30);
+                }
+            }
+
+            .infoblock {
+                width: px(440);
+
+                h5 {
+                    font-size: px(20);
+                    line-height: px(22);
+                    padding-bottom: px(10);
+                }
+
+                p {
+                    font-size: px(14);
+                    line-height: px(18);
+                }
+
+                &.rudder {
+                    bottom: 63vh;
+                    left: 10vh;
+                }
+
+                &.virtual-cockpit {
+                    bottom: 45vh;
+                    left: 68vh;
+                }
+
+                &.voice-control {
+                    bottom: 28vh;
+                    left: 89vh;
+                }
+
+                &.mmi {
+                    width: px(480);
+                    bottom: 8vh;
+                    left: 94vh;
+                }
+            }
+
+            .info {
+                width: px(900);
+                top: px(20);
+                right: px(40);
+            }
+
+            .new {
+                width: 25vh;
+
+                &.rudder {
+                    bottom: 50vh;
+                    left: 12vh;
+                }
+
+                &.virtual-cockpit {
+                    bottom: 51vh;
+                    left: 48vh;
+                }
+
+                &.voice-control {
+                    bottom: 34vh;
+                    left: 72vh;
+                }
+
+                &.mmi {
+                    bottom: 10vh;
+                    left: 70vh;
+                }
+            }
+        }
+
+        .fourth-slide {
+            justify-content: space-between;
+            padding: px(60) px(40);
+
+            .timber {
+                width: px(400);
+                object-position: 50% 50%;
+            }
+
+            .info {
+                width: px(900);
+
+                h4 {
+                    margin-top: px(60);
+                    margin-bottom: 8vh;
+                }
+
+                .first-paragraph,
+                .second-paragraph {
+                    h5 {
+                        margin-bottom: px(10);
+                    }
+
+                    p {
+                        padding-bottom: 5vh;
+                    }
+                }
+            }
+        }
+
+        .fifth-slide {
+            .left-side {
+                .info {
+                    padding: 12vh px(50) 0 px(50);
+
+                    h4 {
+                        font-size: px(32);
+                    }
+
+                    p {
+                        font-size: px(18);
+                        line-height: px(22);
+                    }
+                }
+            }
+
+            .right-side {
+                img {
+                    height: 75vh;
+                }
+            }
+        }
+
+        .sixth-slide {
+            .info {
+                width: px(1400);
+                padding-left: px(60);
+                margin: px(120) auto 0;
+
+                h4 {
+                    font-size: px(32);
+                }
+
+                p {
+                    font-size: px(18);
+                    line-height: px(22);
+                }
+            }
+
+            .sprite {
+                margin: 6vh auto 0;
+                padding-left: px(60);
+                width: px(1300);
+                height: px(360);
+
+                &-item {
+                    width: px(200);
+                }
+            }
+        }
+    }
+}

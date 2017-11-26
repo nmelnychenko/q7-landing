@@ -1,0 +1,388 @@
+@import '../desktop';
+
+@keyframes carFadeInDiagonal3 {
+    0% {
+        bottom: 10vh;
+        right: px(100);
+        transform: scale(.95);
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 28vh;
+        right: px(300);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes carFadeInDiagonal4 {
+    0% {
+        top: 40vh;
+        left: px(200);
+        transform: scale(.95);
+        opacity: 0;
+    }
+
+    100% {
+        top: 20vh;
+        left: 0;
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+& {
+    .page-identifier {
+        top: px(50);
+        height: px(40);
+    }
+
+    &__controls {
+        bottom: px(20);
+        left: px(60);
+
+        .numeration {
+            top: 0;
+        }
+    }
+
+    &__counter {
+        font-size: px(60);
+        top: px(-40);
+        left: px(30);
+    }
+
+    &__divider {
+        transform: scale(.7);
+        top: px(-30);
+        left: px(40);
+    }
+
+    &__left-arrow {
+        margin-right: 3rem;
+    }
+
+    &__vertical-controls {
+        height: 6vh;
+
+        .item {
+            height: 3vh;
+
+            span {
+                top: px(-30);
+                font-size: px(16);
+            }
+
+            &:hover {
+                height: 6vh;
+            }
+        }
+    }
+
+    .first-slide {
+        h4 {
+            font-size: px(24);
+            margin-bottom: 5vh;
+        }
+
+        p {
+            font-size: px(16);
+            line-height: px(20);
+        }
+
+        img {
+            bottom: 0;
+            left: px(520);
+            width: px(500);
+        }
+
+        &__left-item {
+            padding-top: 13vh;
+            width: 32vw;
+
+            .info {
+                h5 {
+                    font-size: px(28);
+                    line-height: px(32);
+                    padding-bottom: 5vh;
+                }
+
+                p {
+                    font-size: px(16);
+                    line-height: px(20);
+                    padding-bottom: 3vh;
+                }
+            }
+
+            .quantitative-characteristics {
+                width: px(400);
+                margin: 2vh 0 0 px(80);
+            }
+        }
+
+        &__center-item {
+            padding-top: 3vh;
+        }
+
+        &__right-item {
+            width: 33vw;
+            padding: 3vh px(20) 0 0;
+
+            h5 {
+                font-size: px(24);
+                padding-bottom: 2vh;
+            }
+
+            p {
+                font-size: px(16);
+                line-height: px(20);
+                padding-bottom: 2vh;
+            }
+
+            .productivity {
+                width: px(600);
+                margin: 2vh 0 0 px(100);
+            }
+        }
+    }
+
+    .second-slide {
+        img {
+            bottom: 10vh;
+            left: px(520);
+            width: px(500);
+        }
+
+        h5 {
+            font-size: px(28);
+            line-height: px(32);
+            padding-bottom: 5vh;
+        }
+
+        p {
+            font-size: px(16);
+            line-height: px(20);
+            padding-bottom: 3vh;
+        }
+
+        &__left-item {
+            width: 34vw;
+            padding-top: 12vh;
+
+            h4 {
+                margin-bottom: 6vh;
+            }
+
+            svg {
+                width: px(400);
+                margin: 3vh 0 0 px(40);
+            }
+        }
+
+        &__right-item {
+            width: 34vw;
+            padding: 10vh px(20) 0 0;
+
+            svg {
+                width: px(600);
+                margin: 10vh 0 0 px(140);
+            }
+        }
+    }
+
+    .third-slide {
+        .car-photo {
+            bottom: px(-120);
+            right: px(0);
+            width: px(600);
+
+            svg {
+                width: px(320);
+                top: px(180);
+                left: px(-100);
+            }
+
+            .info-block {
+                width: px(620);
+                top: px(260);
+                left: px(-300);
+
+                h5 {
+                    font-size: px(22);
+                    line-height: px(26);
+                    margin-bottom: px(16);
+                }
+
+                p {
+                    font-size: px(16);
+                    padding-left: 0;
+                    line-height: px(20);
+                }
+            }
+        }
+
+        h4 {
+            font-size: px(24);
+            margin: px(160) px(60) px(80);
+        }
+
+        p {
+            width: px(600);
+            font-size: px(16);
+            line-height: px(20);
+            padding-left: px(60);
+        }
+    }
+
+    .fourth-slide {
+        h4 {
+            margin: px(100) 0 px(60) 50vw;
+            font-size: px(24);
+        }
+
+        .car-photo {
+            width: 50vw;
+
+            svg {
+                width: px(360);
+                top: px(100);
+                left: px(480);
+            }
+
+            .info-block {
+                right: -40vw;
+                top: 0;
+                width: 40vw;
+
+                p {
+                    font-size: px(16);
+                    line-height: px(22);
+                    padding-bottom: px(20);
+                }
+            }
+        }
+    }
+
+    .fifth-slide {
+        .left-side {
+            padding: 15vh px(40) 0;
+
+            h5 {
+                font-size: px(24);
+                line-height: px(30);
+                padding-bottom: 4vh;
+            }
+
+            h4 {
+                font-size: px(32);
+                margin-bottom: 4vh;
+            }
+
+            p {
+                width: px(600);
+                font-size: px(16);
+                line-height: px(20);
+            }
+        }
+
+        .right-side {
+            padding-top: 10vh;
+            width: px(800);
+
+            div {
+                padding-right: px(20);
+
+                h5 {
+                    font-size: px(24);
+                    padding-bottom: 2vh;
+                }
+
+                p {
+                    font-size: px(16);
+                    line-height: px(20);
+                    padding-bottom: 6vh;
+                }
+
+                &.parking {
+                    width: px(660);
+                    padding-left: px(140);
+                }
+
+                &.city {
+                    width: px(680);
+                    padding-left: px(80);
+                }
+
+                &.tour {
+                    width: px(640);
+                    padding-left: px(20);
+                }
+            }
+        }
+    }
+
+    .sixth-slide {
+        .main-content {
+            width: 50vw;
+            padding-top: px(40);
+            padding-right: px(20);
+
+            h4 {
+                margin-bottom: px(80);
+                font-size: px(32);
+                line-height: px(40);
+            }
+
+            .list-heading {
+                font-size: px(22);
+                padding-bottom: px(20);
+            }
+
+            li {
+                font-size: px(18);
+                line-height: px(26);
+                text-indent: px(20);
+                padding-bottom: px(10);
+
+                &:after {
+                    left: px(-20);
+                    font-size: px(18);
+                }
+            }
+        }
+    }
+
+    .seventh-slide {
+        .main-content {
+            width: 40vw;
+            padding-top: px(60);
+
+            h4 {
+                width: max-content;
+                font-size: px(32);
+                line-height: px(40);
+            }
+        }
+    }
+
+    .ninth-slide {
+        .main-content {
+            width: 40vw;
+            padding-right: px(20);
+            padding-top: 10vh;
+
+            h4 {
+                font-size: px(32);
+                margin-bottom: 6vh;
+                line-height: px(40);
+            }
+
+            p {
+                font-size: px(16);
+                line-height: px(20);
+                padding-bottom: 3vh;
+            }
+        }
+    }
+}

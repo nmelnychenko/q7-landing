@@ -1,0 +1,14 @@
+@import '../desktop';
+
+& {
+    .item {
+        .car-model {
+            width: px(900);
+            font-size: px(40);
+
+            h3 {
+                font-size: px(60);
+            }
+        }
+    }
+}

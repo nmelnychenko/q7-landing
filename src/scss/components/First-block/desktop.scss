@@ -1,0 +1,349 @@
+@keyframes heartBeatOpacity {
+    0% {
+        opacity: 1;
+    }
+
+    65% {
+        opacity: .15;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes textFadeIn {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes underlineFromCenter {
+    0% {
+        width: 0;
+        left: 50%;
+        right: 50%;
+    }
+
+    100% {
+        width: 100%;
+        left: 0;
+        right: 0;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+& {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+    .page-identifier {
+        position: absolute;
+        z-index: 5;
+        top: px(40);
+        left: 2vw;
+        width: 12vw;
+        height: px(50);
+        border-bottom: .5px solid $colorWhite;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 6;
+            bottom: -3px;
+            left: 0;
+            width: 14.2857%;
+            height: 3px;
+            background: $colorWhite;
+        }
+    }
+
+    .main-text {
+        width: px(1230);
+        height: px(500);
+        padding-top: px(20);
+        margin: 0 auto;
+
+        h4 {
+            position: relative;
+            z-index: -1;
+            width: max-content;
+            font-family: 'Audi', Arial, Helvetica, sans-serif;
+            font-size: px(40);
+            line-height: px(120);
+            opacity: 0;
+            transform: translateY(10px);
+
+            &::after {
+                width: 0;
+                height: 2px;
+                position: absolute;
+                left: 50%;
+                right: 50%;
+                bottom: 0;
+                content: "";
+                background-image: linear-gradient(to right, rgba(255,20,76, 0), rgba(255,20,76, 0.8) 40%, rgba(255,20,76, 1) 50%, rgba(255,20,76, 0.8) 60%, rgba(255,20,76,0));
+            }
+        }
+
+        p {
+            position: relative;
+            z-index: -1;
+            margin: px(40) 0 px(100);
+            font-family: 'Audi', Arial, Helvetica, sans-serif;
+            font-size: px(22);
+            line-height: px(30);
+            opacity: 0;
+            transform: translateY(10px);
+        }
+    }
+
+    &.current-page {
+        .main-text {
+            h4 {
+                animation: textFadeIn .5s 1s ease both;
+
+                &::after {
+                    animation: underlineFromCenter 1s 1.5s ease both;
+                }
+            }
+
+            p {
+                animation: textFadeIn .5s 2s ease both;
+            }
+        }
+
+        .car-container,
+        .threesixty {
+            animation: fadeIn 1s 2s ease both;
+        }
+    }
+
+    .left-arrow {
+        position: absolute;
+        z-index: 18;
+        background: url('images/360_left-arrow.png') no-repeat;
+        background-size: 100% 100%;
+        background-position: center 100%;
+        top: 12vw;
+        left: px(440);
+        width: 16vw;
+        height: 10vw;
+    }
+
+    .right-arrow {
+        position: absolute;
+        z-index: 18;
+        background: url('images/360_right-arrow.png') no-repeat;
+        background-size: 100% 100%;
+        background-position: center 100%;
+        top: 12vw;
+        left: px(1480);
+        width: 16vw;
+        height: 10vw;
+    }
+
+    .hand {
+        position: absolute;
+        z-index: 101;
+        background: url('images/hand.png') no-repeat;
+        background-size: 100% 100%;
+        background-position: center 100%;
+        top: 21.5vw;
+        left: px(1100);
+        width: 1.5vw;
+        height: 3vh;
+
+        .previous-frame {
+            position: absolute;
+            left: px(-60);
+            font-family: 'Audi', Arial, Helvetica, sans-serif;
+            font-size: px(50);
+            line-height: px(40);
+            color: $colorPink;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .next-frame {
+            position: absolute;
+            right: px(-60);
+            font-family: 'Audi', Arial, Helvetica, sans-serif;
+            font-size: px(50);
+            line-height: px(40);
+            color: $colorPink;
+            transform: rotateY(180deg);
+            cursor: pointer;
+            user-select: none;
+        }
+    }
+
+    .play,
+    .stop {
+        position: absolute;
+        z-index: 22;
+        top: px(500);
+        right: px(300);
+        font-family: 'Audi', Arial, Helvetica, sans-serif;
+        font-size: px(50);
+        font-weight: bold;
+        color: $colorPink;
+        cursor: pointer;
+        user-select: none;
+        animation: heartBeatOpacity 2.5s ease infinite;
+
+        sup {
+            font-size: px(30);
+            vertical-align: top;
+        }
+    }
+
+    .stop {
+        z-index: 1;
+    }
+
+    .car-container {
+        position: absolute;
+        width: 100vw;
+        top: 46vh;
+        left: 0;
+        margin: 0 auto;
+        opacity: 0;
+
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 18;
+            background: url('images/red_shadow.png') no-repeat;
+            background-size: contain;
+            background-position: 100% -100%;
+            top: -8vh;
+            left: px(120);
+            width: 75%;
+            height: 60%;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            z-index: 18;
+            background: url('images/concrete.png') no-repeat;
+            background-size: 100% 20%;
+            background-position: 100% 10%;
+            width: 90%;
+            top: 10vw;
+            left: px(100);
+            height: 100%;
+        }
+
+        span {
+            position: absolute;
+            display: block;
+            top: px(-100);
+            right: px(620);
+            font-family: 'Audi', Arial, Helvetica, sans-serif;
+            font-size: px(170);
+            font-weight: bold;
+            color: #fff;
+            opacity: .5;
+            z-index: 19;
+        }
+
+        .etron-bg-text {
+            font-size: px(80);
+            top: px(60);
+            right: px(460);
+        }
+
+        img {
+            width: 100%;
+            opacity: 0;
+        }
+    }
+
+    .threesixty {
+        position: absolute;
+        top: 40vh;
+        margin: 0 auto;
+        z-index: 21;
+        left: px(200);
+        overflow: hidden;
+        width: px(1830);
+        opacity: 0;
+
+        .threesixty_images {
+            display: none;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            &.active {
+                img {
+                    cursor: grabbing;
+                }
+            }
+
+            img {
+                position: absolute;
+                top: 15%;
+                left: 15vw;
+                width: 50%;
+                height: auto;
+                user-select: none;
+                cursor: grab;
+
+                &.previous-image {
+                    visibility: hidden;
+                    width: 0;
+                }
+
+                &.current-image {
+                    visibility: visible;
+                    width: 50%;
+                }
+            }
+        }
+
+        .spinner {
+            width: 60px;
+            display: block;
+            margin: 0 auto;
+            height: 30px;
+            background: #333;
+            background: rgba(0, 0, 0, 0.7);
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+
+            span {
+                font-family: Arial, "MS Trebuchet", sans-serif;
+                font-size: 12px;
+                font-weight: bolder;
+                color: #FFF;
+                text-align: center;
+                line-height: 30px;
+                display: block;
+            }
+        }
+    }
+}

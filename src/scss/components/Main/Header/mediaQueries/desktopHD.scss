@@ -1,0 +1,20 @@
+@import '../desktop';
+
+& {
+    .item {
+        .quattro {
+            background: url('images/car-q7.png') center 140% no-repeat;
+            background-size: 42vw 34vw;
+        }
+
+        .e-tron {
+            background: url('images/car-q7-e-tron.png') center 110% no-repeat;
+            background-size: 42vw 34vw;
+        }
+
+        .sq7-tdi {
+            background: url('images/car-sq7.png')  center 110% no-repeat;
+            background-size: 42vw 34vw;
+        }
+    }
+}

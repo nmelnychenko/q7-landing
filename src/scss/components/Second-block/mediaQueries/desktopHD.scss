@@ -1,0 +1,32 @@
+@import '../desktop';
+
+& {
+    .page-identifier {
+        top: px(100);
+        left: 4vw;
+    }
+
+    .main-text {
+        width: px(1830);
+        margin: px(80) auto 0;
+    }
+
+    h4 {
+        font-size: px(60);
+    }
+
+    p {
+        font-size: px(32);
+        line-height: px(40);
+    }
+
+    .car-container {
+        width: px(2830);
+
+        span {
+            font-size: px(230);
+            top: px(200);
+            right: px(660);
+        }
+    }
+}

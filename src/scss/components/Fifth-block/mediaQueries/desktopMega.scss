@@ -1,0 +1,381 @@
+@import '../desktop';
+
+@keyframes carFadeInDiagonal4 {
+    0% {
+        top: 32vh;
+        left: 12vw;
+        transform: scale(.95);
+        opacity: 0;
+    }
+
+    100% {
+        top: 26vh;
+        left: 5vw;
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+& {
+    .page-identifier {
+        top: 4vh;
+        left: 4vw;
+        width: 12vw;
+        height: 46px;
+
+        span {
+            font-size: 32px;
+        }
+    }
+
+    &__slider {
+        .item {
+            h4 {
+                font-size: px(60);
+            }
+        }
+
+        .first-slide {
+            img {
+                bottom: 8vh;
+                left: 34vw;
+                height: 60vh;
+            }
+
+            h4 {
+                font-size: px(44);
+                margin-bottom: px(60);
+            }
+
+            &__left-item {
+                padding-left: 4vw;
+                padding-top: 12vh;
+                width: 30vw;
+
+                .info {
+                    h5 {
+                        font-size: px(60);
+                        line-height: px(80);
+                        padding-bottom: 2vh;
+                    }
+
+                    p {
+                        font-size: px(32);
+                        line-height: px(40);
+                        padding-bottom: 2vh;
+                    }
+                }
+
+                .quantitative-characteristics {
+                    width: px(1000);
+                    margin: 4vh 0 0 px(100);
+                }
+            }
+
+            &__center-item {
+                width: 28vw;
+                padding-top: 4vh;
+
+                h5 {
+                    font-size: px(44);
+                    padding-bottom: 2vh;
+                }
+
+                p {
+                    font-size: px(32);
+                    line-height: 2vh;
+                }
+            }
+
+            &__right-item {
+                width: 34vw;
+                padding: 4vh 4vw 0 0;
+
+                h5 {
+                    font-size: px(44);
+                    padding-bottom: 2vh;
+                }
+
+                p {
+                    font-size: px(32);
+                    line-height: px(40);
+                    padding-bottom: 3vh;
+                }
+
+                svg {
+                    width: px(1400);
+                    margin-left: 0;
+                    margin-top: 4vh;
+                    transform: perspective(600px) rotateY(-25deg) rotateX(20deg) translateX(-200px);
+
+                    .cls-19 {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        .second-slide {
+            img {
+                bottom: 8vh;
+                left: 32vw;
+                height: 60vh;
+            }
+
+            h4 {
+                font-size: px(60);
+                margin-bottom: 4vh;
+            }
+
+            &__left-item {
+                padding-left: 4vw;
+                padding-top: 12vh;
+                width: 30vw;
+
+                h5 {
+                    font-size: px(44);
+                    padding-bottom: 2vh;
+                }
+
+                p {
+                    font-size: px(32);
+                    line-height: px(40);
+                    padding-bottom: 4vh;
+                }
+
+                svg {
+                    width: px(1000);
+                    margin: 6vh 0 0 4vw;
+
+                    .cls-5,
+                    .cls-6,
+                    .cls-2 {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            &__right-item {
+                width: 32vw;
+                margin-top: 0;
+                padding: 12vh 4vw 0 0;
+
+                h5 {
+                    font-size: px(44);
+                    padding-bottom: 2vh;
+                }
+
+                p {
+                    font-size: px(32);
+                    line-height: px(40);
+                    padding-bottom: 4vh;
+                }
+
+                svg {
+                    width: px(1400);
+                    margin-top: 20vh;
+                    margin-left: 0;
+
+                    .cls-8 {
+                        font-size: 10px;
+                    }
+
+                    .cls-20 {
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+
+        .third-slide {
+            .car-photo {
+                bottom: px(-120);
+                right: px(-300);
+                width: px(1600);
+
+                svg {
+                    width: px(600);
+                    top: px(420);
+                    left: px(-60);
+                }
+
+                .info-block {
+                    width: px(960);
+                    top: px(540);
+                    left: px(-680);
+
+                    h5 {
+                        font-size: px(44);
+                        line-height: px(60);
+                        margin-bottom: px(16);
+                    }
+
+                    p {
+                        font-size: px(32);
+                        line-height: px(40);
+                    }
+                }
+            }
+
+            h4 {
+                font-size: px(60);
+                margin: 12vh 4vw px(80);
+            }
+
+            p {
+                width: px(1200);
+                font-size: px(32);
+                line-height: px(40);
+                padding-left: 4vw;
+            }
+        }
+
+        .fourth-slide {
+            h4 {
+                margin: 4vh 0 4vw 55vw;
+                font-size: px(60);
+            }
+
+            .car-photo {
+                top: px(600);
+                left: px(500);
+                width: 50vw;
+
+                svg {
+                    width: 26vw;
+                    top: 7vh;
+                    left: 30vw;
+                }
+
+                .info-block {
+                    left: 50vw;
+                    top: -16vh;
+                    width: 40vw;
+
+                    p {
+                        font-size: px(32);
+                        line-height: px(40);
+                        padding-bottom: 2vh;
+                    }
+                }
+            }
+        }
+
+        .fifth-slide {
+            img {
+                object-position: 100% 50%;
+            }
+
+            .left-side {
+                padding: 12vh 4vw 0;
+
+                h5 {
+                    font-size: px(44);
+                    line-height: px(60);
+                    padding-bottom: 2vh;
+                }
+
+                h4 {
+                    font-size: px(60);
+                    margin-bottom: 3vh;
+                }
+
+                p {
+                    width: px(920);
+                    font-size: px(32);
+                    line-height: px(40);
+                }
+            }
+
+            .right-side {
+                padding-top: 12vh;
+                width: px(1800);
+
+                div {
+                    padding-right: 4vw;
+
+                    h5 {
+                        font-size: px(44);
+                        padding-bottom: 2vh;
+                    }
+
+                    p {
+                        font-size: px(32);
+                        line-height: px(40);
+                        padding-bottom: 6vh;
+                    }
+
+                    &.parking {
+                        width: px(1680);
+                        padding-left: px(320);
+                    }
+
+                    &.city {
+                        width: px(1520);
+                        padding-left: px(160);
+                    }
+
+                    &.tour {
+                        width: px(1240);
+                        padding-left: px(20);
+                    }
+                }
+            }
+        }
+
+        .sixth-slide {
+            .main-content {
+                width: 40vw;
+                padding-top: 6vh;
+
+                h4 {
+                    margin-bottom: 6vh;
+                    line-height: px(80);
+                }
+
+                .list-heading {
+                    font-size: px(44);
+                    padding-bottom: 4vh;
+                }
+
+                li {
+                    margin-right: 4vw;
+                    font-size: px(32);
+                    line-height: px(40);
+                    text-indent: px(30);
+
+                    &:after {
+                        left: px(-30);
+                        font-size: px(28);
+                    }
+                }
+            }
+        }
+
+        .seventh-slide {
+            .main-content {
+                width: 40vw;
+                padding-top: 6vh;
+            }
+        }
+
+        .ninth-slide {
+            .main-content {
+                width: 40vw;
+                padding-top: 6vh;
+                padding-right: 4vw;
+
+                h4 {
+                    margin-bottom: 6vh;
+                    line-height: px(80);
+                }
+
+                p {
+                    font-size: px(32);
+                    line-height: px(40);
+                    padding-bottom: 2vh;
+                }
+            }
+        }
+    }
+}

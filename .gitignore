@@ -1,0 +1,8 @@
+.idea/
+node_modules/
+yarn.lock
+.module-cache/
+.DS_Store
+dist/videos/
+src/videos/
+bower_components/

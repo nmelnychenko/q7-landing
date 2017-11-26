@@ -1,0 +1,19 @@
+@import '../desktop';
+
+& {
+
+    .top-panel {
+        padding: 0 px(50);
+    }
+
+    .car-model {
+        left: px(50);
+        bottom: px(50);
+        width: px(900);
+        font-size: px(36);
+
+        h1 {
+            font-size: px(60);
+        } 
+    }
+}

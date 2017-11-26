@@ -1,0 +1,20 @@
+@import '../desktop';
+
+& {
+    .page-identifier {
+        top: px(50);
+        height: px(40);
+    }
+
+    .controls {
+        .body-color,
+        .wheels {
+            height: px(100);
+            width: px(600);
+
+            &__item {
+                width: px(100);
+            }
+        }
+    }
+}

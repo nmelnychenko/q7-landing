@@ -1,0 +1,103 @@
+@import '../desktop';
+
+& {
+    .page-identifier {
+        top: px(100);
+        left: 4vw;
+    }
+
+    h4 {
+        margin: 10vh 4vw 0;
+        font-size: px(32);
+        line-height: px(60);
+    }
+
+    .info {
+        h5 {
+            margin: 2vh 4vw 0;
+            font-size: px(60);
+            line-height: px(80);
+        }
+
+        p {
+            margin: px(60) 4vw px(100);
+            width: px(860);
+            font-size: px(28);
+            line-height: px(36);
+        }
+    }
+
+    .test-drive {
+        margin-left: 4vw;
+    }
+
+    .test-drive-button,
+    .submit {
+        margin: px(80) 5vw 0;
+
+        span {
+            font-size: px(28);
+        }
+    }
+
+    .close-form {
+        width: px(60);
+        padding: px(10);
+        right: px(60);
+        top: px(60);
+    }
+
+    .test-drive-form {
+        h4 {
+            margin: 10vh 0 px(60) 25vw;
+            font-size: px(44);
+            line-height: px(60);
+        }
+
+        form {
+            margin-left: 25vw;
+            width: 50vw;
+
+            .gender {
+                span {
+                    font-size: px(28);
+                    line-height: px(36);
+                    //margin-right: px(70);
+                }
+            }
+
+            .name,
+            .surname,
+            .tel,
+            .email {
+                margin: px(40) 0;
+            }
+
+            [type='text'],
+            [type='tel'],
+            [type='email'] {
+                height: px(60);
+                padding-left: px(20);
+
+                &::placeholder {
+                    font-size: px(28);
+                }
+            }
+
+            .agreement {
+                margin-top: px(80);
+
+                [for='agreement'] {
+                    //padding-left: px(20);
+                    font-size: px(32);
+                }
+
+                p {
+                    padding-top: px(40);
+                    font-size: px(28);
+                    line-height: px(36);
+                }
+            }
+        }
+    }
+}

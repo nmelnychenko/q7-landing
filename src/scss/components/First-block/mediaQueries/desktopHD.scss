@@ -1,0 +1,48 @@
+@import '../desktop';
+
+& {
+    .page-identifier {
+        top: px(100);
+        left: 4vw;
+    }
+
+    .main-text {
+        width: px(1830);
+        margin: px(80) auto 0;
+
+        h4 {
+            font-size: px(60);
+        }
+
+        p {
+            font-size: px(34);
+            line-height: px(48);
+        }
+    }
+
+    .right-arrow {
+        left: 58vw;
+    }
+
+    .left-arrow {
+        left: 21vw;
+    }
+
+    .hand {
+        left: 46.5vw;
+    }
+
+    .car-container {
+        width: px(2830);
+
+        span {
+            font-size: px(230);
+            top: 0;
+            right: px(660);
+        }
+
+        &::after {
+            left: 6vw;
+        }
+    }
+}

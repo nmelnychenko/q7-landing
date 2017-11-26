@@ -1,0 +1,13 @@
+@import '../desktop';
+
+& {
+
+    .car-model {
+        width: px(1000);
+        font-size: px(50);
+
+        h1 {
+            font-size: px(90);
+        } 
+    }
+}
