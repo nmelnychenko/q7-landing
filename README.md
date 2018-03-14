@@ -1,3 +1,6 @@
+## Demo
+https://nmelnychenko.github.io/q7-landing/dist
+
 ## Install
 All commands are carried out in some command prompt
 - `git clone https://github.com/clocklab/clocklab-pack.git`
